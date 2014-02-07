@@ -3,7 +3,7 @@
   <title><![CDATA[Typebar]]></title>
   <link href="http://typebar.github.io/atom.xml" rel="self"/>
   <link href="http://typebar.github.io/"/>
-  <updated>2014-02-07T12:08:42+00:00</updated>
+  <updated>2014-02-07T14:16:49+00:00</updated>
   <id>http://typebar.github.io/</id>
   <author>
     <name><![CDATA[Pedro && Anton]]></name>
@@ -11,5 +11,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello, Typebar!]]></title>
+    <link href="http://typebar.github.io/blog/2014/02/07/hello-typebar/"/>
+    <updated>2014-02-07T13:11:49+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/02/07/hello-typebar</id>
+    <content type="html"><![CDATA[<p>We like typewriters and hope you do too! That&rsquo;s why we started <a href="http://typebar.github.io/">Typebar</a>, an open-source project designed to allow the quick and easy re-purposing of vintage typewriters.</p>
+
+<p>Through examples, source-code, and tutorials, we hope to help you on your way to recycling your old typing pal.</p>
+
+<p>The project is currently at the planning stage, but we hope to share every bit of our journey with you along the way.</p>
+
+<p>We are sourcing a couple of typewriters to disassemble and modify with some nifty switches and LEDs, so check back soon for some glam shots of rusty old, character filled, typing companions.</p>
+]]></content>
+  </entry>
   
 </feed>
