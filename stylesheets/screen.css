@@ -331,6 +331,23 @@ hr:after {
     background: #d04e38;
 }
 
+hr.headline {
+    padding: 0;
+    border: none;
+    border-top: medium dashed #333;
+    color: #383838;
+    text-align: center;
+}
+hr.headline:after {
+    content: "⏧";
+    display: inline-block;
+    position: relative; 
+    top: -0.6em;  
+    font-size: 2.5em;
+    padding: 0 0.05em;
+    background: #ffffff;
+}
+
 small {
     font-size:.8em
 }
