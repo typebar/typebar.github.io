@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Typebar]]></title>
-  <link href="http://typebar.github.io/atom.xml" rel="self"/>
+
+  <title><![CDATA[Category: post | Typebar]]></title>
+  <link href="http://typebar.github.io/blog/categories/post/atom.xml" rel="self"/>
   <link href="http://typebar.github.io/"/>
   <updated>2014-02-19T11:49:48+00:00</updated>
   <id>http://typebar.github.io/</id>
@@ -11,56 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Maze of a thousand parts]]></title>
-    <link href="http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/"/>
-    <updated>2014-02-18T10:43:20+00:00</updated>
-    <id>http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts</id>
-    <content type="html"><![CDATA[<p>After a lengthy morning of flipping through data sheets and weighing
-our options, we have placed an order with Farnell to get the initial
-parts needed to begin prototyping Typebar.</p>
-
-<p>With multiplexers, shift registers, rotary encoders, RGB LEDs, reed
-switches, prototyping PCBs galore, we are high spirits, hoping that we
-didn&rsquo;t leave anything vital off our list.</p>
-
-<p>We have also acquired a Bluetooth board base around the BlueGiga BLE112
-Bluetooth Smart Module.</p>
-
-<p>With the delivery gnomes packing, racking, and clacking our parts over
-to us, we will be programming a few libraries to manage the Bluetooth
-communication and flip flopping of the typewriter keys.</p>
-
-<p>One of the most essential parts is a blue tooth capable board that will
-help the user to have a convenient way of accessing their typed data. While
-we wait on the order which will be here within 24 hours we can start
-looking at all that code. It&rsquo;s time to build a few libraries to help
-navigate the mappings required for all 47 keys as well as other switches
-and LEDs too.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Typewriter found]]></title>
-    <link href="http://typebar.github.io/blog/2014/02/16/typewriter-found/"/>
-    <updated>2014-02-16T10:42:32+00:00</updated>
-    <id>http://typebar.github.io/blog/2014/02/16/typewriter-found</id>
-    <content type="html"><![CDATA[<p>We have finally collected our typewriter and overall it is in very
-good condition. Despite a few sticky keys and a slightly tired looking
-ribbon it is a bargain for £15 and with a little bit of maintenance we
-should have her sorted out in no time.</p>
-
-<p>The seller of typewriter, Rob Parrett, a music producer and
-self-proclaimed &ldquo;car boot&rdquo; enthusiast,  has a fantastic collection of
-instruments and oddities from his many years of collecting.</p>
-
-<p>The first and arguably most important stage of our journey is
-complete, as now we have a Royal Typewriter to cut, and configure into
-a new fandangled contraption, with all the modern convenience of a 21st
-century typing gizmo.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Hunt]]></title>
@@ -74,7 +25,7 @@ filled world of second-hand goods, and for that reason, we found
 ourselves wading into a labyrinth of tight corridors and make-shift
 alleyways on a hunt.</p>
 
-<p><img class="right" src="http://typebar.github.io/images/IMG_0997.jpg" style="width: auto;
+<p><img class="right" src="/images/IMG_0997.jpg" style="width: auto;
 height: 420px;" alt="Lock Market"></p>
 
 <p>Our hunt began with the decision to try, on what one may consider the
@@ -101,7 +52,7 @@ dreary Monday.</p>
 easily and to press on in our search of the item we most desired in
 the world &ndash; a tiny, but tasteful typewriter, or two.</p>
 
-<p><img class="left" src="http://typebar.github.io/images/IMG_0998.jpg" style="width: 420px;
+<p><img class="left" src="/images/IMG_0998.jpg" style="width: 420px;
 height: auto;" alt="Photo Typewriter"></p>
 
 <p>We came upon an uber trendy photography shop with a beautiful old
@@ -121,7 +72,7 @@ told us, &ldquo;WD40 works to unstick the keys&rdquo; (Note: WD40 is great for
 removing dirt and residue, but something like Hoppe&rsquo;s Gun Oil is
 needed to lubricate a typewriter).</p>
 
-<p><img class="right" src="http://typebar.github.io/images/IMG_0999.jpg" style="width: 420px;
+<p><img class="right" src="/images/IMG_0999.jpg" style="width: 420px;
 height: auto;" alt="Typewriter"></p>
 
 <p>Tucked away behind a few boxes, the shop keeper had another more
@@ -143,21 +94,6 @@ with a beautiful blue Smith Corona, we feel as though we have come out
 ahead having seen three different types of typewriters, and found out
 that sometimes calling your friends before you go trudge through a
 clutter market might just be your very best option.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello, Typebar!]]></title>
-    <link href="http://typebar.github.io/blog/2014/02/07/hello-typebar/"/>
-    <updated>2014-02-07T13:11:49+00:00</updated>
-    <id>http://typebar.github.io/blog/2014/02/07/hello-typebar</id>
-    <content type="html"><![CDATA[<p>We like typewriters and hope you do too! That&rsquo;s why we started <a href="http://typebar.github.io/">Typebar</a>, an open-source project designed to allow the quick and easy re-purposing of vintage typewriters.</p>
-
-<p>Through examples, source-code, and tutorials, we hope to help you on your way to recycling your old typing pal.</p>
-
-<p>The project is currently at the planning stage, but we hope to share every bit of our journey with you along the way.</p>
-
-<p>We are sourcing a couple of typewriters to disassemble and modify with some nifty switches and LEDs, so check back soon for some glam shots of rusty old, character filled, typing companions.</p>
 ]]></content>
   </entry>
   
