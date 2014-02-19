@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Typebar]]></title>
-  <link href="http://typebar.github.io/atom.xml" rel="self"/>
+
+  <title><![CDATA[Category: general | Typebar]]></title>
+  <link href="http://typebar.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://typebar.github.io/"/>
   <updated>2014-02-19T11:44:30+00:00</updated>
   <id>http://typebar.github.io/</id>
@@ -143,21 +144,6 @@ with a beautiful blue Smith Corona, we feel as though we have come out
 ahead having seen three different types of typewriters, and found out
 that sometimes calling your friends before you go trudge through a
 clutter market might just be your very best option.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello, Typebar!]]></title>
-    <link href="http://typebar.github.io/blog/2014/02/07/hello-typebar/"/>
-    <updated>2014-02-07T13:11:49+00:00</updated>
-    <id>http://typebar.github.io/blog/2014/02/07/hello-typebar</id>
-    <content type="html"><![CDATA[<p>We like typewriters and hope you do too! That&rsquo;s why we started <a href="http://typebar.github.io/">Typebar</a>, an open-source project designed to allow the quick and easy re-purposing of vintage typewriters.</p>
-
-<p>Through examples, source-code, and tutorials, we hope to help you on your way to recycling your old typing pal.</p>
-
-<p>The project is currently at the planning stage, but we hope to share every bit of our journey with you along the way.</p>
-
-<p>We are sourcing a couple of typewriters to disassemble and modify with some nifty switches and LEDs, so check back soon for some glam shots of rusty old, character filled, typing companions.</p>
 ]]></content>
   </entry>
   
