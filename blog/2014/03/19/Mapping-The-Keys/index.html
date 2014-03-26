@@ -5,20 +5,15 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Get Started with Typebar - Typebar</title>
+  <title>Mapping the Keys - Typebar</title>
   <meta name="author" content="Pedro && Anton">
 
   
-  <meta name="description" content="Hardware Parts List Finding a typewriter Finding other components Circuit Debugging Possible Extensions Code Installation Testing Debugging Mapping &hellip;">
-  <meta name="keywords" content="typewriter qwerty typebar keyboard layout shopping smith corona hardware ibm">
-  <meta property="article:tag" content="typewriter">
-<meta property="article:tag" content="qwerty">
-<meta property="article:tag" content="typebar">
-<meta property="article:tag" content="keyboard layout">
-<meta property="article:tag" content="shopping">
-<meta property="article:tag" content="smith corona">
-<meta property="article:tag" content="hardware">
-<meta property="article:tag" content="ibm">
+  <meta name="description" content="Mapping The Keys &amp; Sensor Thoughts Sometimes there is nothing better than getting a pen and paper out and when it came to mapping out all the &hellip;">
+  <meta name="keywords" content="arduino raspberry pi general purpose input\/output">
+  <meta property="article:tag" content="arduino">
+<meta property="article:tag" content="raspberry pi">
+<meta property="article:tag" content="general purpose input\/output">
   
   
   <!-- http://t.co/dKP3o1e -->
@@ -27,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://typebar.github.io/examples/">
+  <link rel="canonical" href="http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,39 +76,33 @@
     
   <header>
     
-      <h1 class="entry-title">Get Started With Typebar</h1>
+      <h1 class="entry-title">Mapping the Keys</h1>
     
   </header>
 
 
 
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/general/'>general,</a>, <a class='category' href='/blog/categories/post/'>post</a>
+  
+</span>
 
-<div class="entry-content"><h1>Hardware</h1>
 
-<h2>Parts List</h2>
+<div class="entry-content"><h1>Mapping The Keys &amp; Sensor Thoughts</h1>
 
-<h3>Finding a typewriter</h3>
+<p><img class="left" src="http://i1338.photobucket.com/albums/o700/ped4416/MappingTheKeys_zpsdaad141e.jpg" style="width: auto; height: 420px;"></p>
 
-<h3>Finding other components</h3>
+<p>Sometimes there is nothing better than getting a pen and paper out and when it came to mapping out all the keys on the typewriter this was no exception. The keys are mapped in an odd yet consistent order that must be to do with the mechanics of the machine. We will need to program the inputs to call arrays of length 16 to match the port expander chips.</p>
 
-<h2>Circuit</h2>
+<h3>The Sensor Mountings</h3>
 
-<h2>Debugging</h2>
+<p>The underside of the typewriter looks like the best place to place our sensors. Each key as seen in the image below has a long bar that lowers when the key is pressed. A metal chassis makes a very secure support for attaching our solder board onto and from this we are planning to attach small metal pins or wires that will create a circuit by supplying 5v to the bars when pressed. The circuit will be created as each key will be grounded via a suitable point on the frame of the typewriter.</p>
 
-<h2>Possible Extensions</h2>
+<h3>Improving The I2C Library</h3>
 
-<h1>Code</h1>
-
-<h2>Installation</h2>
-
-<h2>Testing</h2>
-
-<h2>Debugging</h2>
-
-<h2>Mapping</h2>
-
-<h2>Extend</h2>
+<p>We have had all 4 <a href="http://uk.farnell.com/microchip/mcp23017-e-sp/ic-io-expander-16bit-i2c-28dip/dp/1332088">MCP23017</a> chips working using the Arduino but to make the code more efficient we have used bit shifting to iterate through all 4 chips to check which pin out of 64 is active. Before this we had four separate .h files and .cpp files which is not good coding practice as we were duplicating many lines of code. The next step is to try and run this code onto the teensy board.</p>
 </div>
 
 
@@ -122,7 +111,7 @@
 	
   
 
-<span class="byline author vcard">Posted by <span class="fn">anton</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Anton && Pedro</span></span>
 
 	
 
@@ -136,12 +125,12 @@
   
 
 
-<time datetime="2014-02-07T13:11:49+00:00" pubdate data-updated="true">Feb 7<span>th</span>, 2014</time>
+<time datetime="2014-03-19T10:43:37+00:00" pubdate data-updated="true">Mar 19<span>th</span>, 2014</time>
       </p>
       
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/examples/index.html" data-via="" data-counturl="http://typebar.github.io/examples/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/" data-via="" data-counturl="http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/" >Tweet</a>
   
   
   
@@ -152,6 +141,10 @@
       
       <p class="meta">
 	
+        <a class="basic-alignment left" href="/blog/2014/03/16/Port-Expander-Trials/" title="Previous Post: Port Expander Trials">&laquo; Port Expander Trials</a>
+	
+	
+        <a class="basic-alignment right" href="/blog/2014/03/20/Building-In-Earnest/" title="Next Post: Building in Earnest">Building in Earnest &raquo;</a>
 	
       </p>
     </footer>
@@ -167,7 +160,7 @@
 
 <aside class="sidebar">
   <p style="border: thick inset; padding: 0.25em 0.5em; line-height: 1.25em;"><font style="font-size: 16px; font-weight: 700;">Reading time:</font><br />
-  less than 1 minute</p>
+  about 1  minute</p>
   
   <section>
   <h1>Recent Posts</h1>
@@ -219,8 +212,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://typebar.github.io/examples/index.html';
-        var disqus_url = 'http://typebar.github.io/examples/index.html';
+        var disqus_identifier = 'http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/';
+        var disqus_url = 'http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/';
         var disqus_script = 'embed.js';
       
     (function () {

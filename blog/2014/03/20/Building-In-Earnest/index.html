@@ -5,20 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Maze of a thousand parts - Typebar</title>
+  <title>Building in Earnest - Typebar</title>
   <meta name="author" content="Pedro && Anton">
 
   
-  <meta name="description" content="After a lengthy morning of flipping through data sheets and weighing
-our options, we have placed an order with Farnell to get the initial
-parts &hellip;">
-  <meta name="keywords" content="bluetooth typewriter rotary encoder gnome wireless data communications">
-  <meta property="article:tag" content="bluetooth">
+  <meta name="description" content="Placing The Solder Board We have cut out an appropriate length of solder board and had to carefully trim away a small part of it to sit against the &hellip;">
+  <meta name="keywords" content="solder chassis integrated circuit typewriter printed circuit board teensy business">
+  <meta property="article:tag" content="solder">
+<meta property="article:tag" content="chassis">
+<meta property="article:tag" content="integrated circuit">
 <meta property="article:tag" content="typewriter">
-<meta property="article:tag" content="rotary encoder">
-<meta property="article:tag" content="gnome">
-<meta property="article:tag" content="wireless">
-<meta property="article:tag" content="data communications">
+<meta property="article:tag" content="printed circuit board">
+<meta property="article:tag" content="teensy">
+<meta property="article:tag" content="business">
   
   
   <!-- http://t.co/dKP3o1e -->
@@ -27,7 +26,7 @@ parts &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/">
+  <link rel="canonical" href="http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,7 +80,7 @@ parts &hellip;">
     
   <header>
     
-      <h1 class="entry-title">Maze of a Thousand Parts</h1>
+      <h1 class="entry-title">Building in Earnest</h1>
     
   </header>
 
@@ -90,32 +89,59 @@ parts &hellip;">
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/general/'>general</a>
+    <a class='category' href='/blog/categories/general/'>general,</a>, <a class='category' href='/blog/categories/post/'>post</a>
   
 </span>
 
 
-<div class="entry-content"><p>After a lengthy morning of flipping through data sheets and weighing
-our options, we have placed an order with Farnell to get the initial
-parts needed to begin prototyping Typebar.</p>
+<div class="entry-content"><h2>Placing The Solder Board</h2>
 
-<p>With multiplexers, shift registers, rotary encoders, RGB LEDs, reed
-switches, prototyping PCBs galore, we are high spirits, hoping that we
-didn&rsquo;t leave anything vital off our list.</p>
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/TheBelly_zps08c9ef02.jpg" style="width: 420px; height: auto;"></p>
 
-<p>We have also acquired a Bluetooth board base around the BlueGiga BLE112
-Bluetooth Smart Module.</p>
+<p>We have cut out an appropriate length of solder board and had to carefully trim away a small part of it to sit against the metal chassis. The chassis is situated centrally with a good solid base to fix the solder board to. The board needs to sit overlapping the keys but not touching them.</p>
 
-<p>With the delivery gnomes packing, racking, and clacking our parts over
-to us, we will be programming a few libraries to manage the Bluetooth
-communication and flip flopping of the typewriter keys.</p>
+<h3>The Belly Of The Beast</h3>
 
-<p>One of the most essential parts is a blue tooth capable board that will
-help the user to have a convenient way of accessing their typed data. While
-we wait on the order which will be here within 24 hours we can start
-looking at all that code. It&rsquo;s time to build a few libraries to help
-navigate the mappings required for all 47 keys as well as other switches
-and LEDs too.</p>
+<p><img class="left" src="http://i1338.photobucket.com/albums/o700/ped4416/IMG_1058_zps108da53a.jpg" style="width: 220px; height: auto;"></p>
+
+<p>Using a small metal ruler and Stanley Blade and making sure to cut across the holes has worked out well for trimming the solder board to size. The images below illustrate the process and show how the central screw on the chassis has been a problem. We had to make sure the common ground did not interfere with the solder board circuit lines creating continuous connections. A simple way to stop this we think is to use some electrical tape wedged in between the metal screw housing and the solder board.</p>
+
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/trimSolderBoard_zpsceb335ad.jpg" style="width: auto; height: 420px;"></p>
+
+<h2>Creating The Circuit</h2>
+
+<p>With all the keys synced to common ground we need 5v to connect the circuit when pressed down. We have trialled hard metal pins as seen in the image below but they may not be suitable as the spacing would have to be very precise. Better options may be splayed ribbon cable or a standard gage wire that pokes through the solder board and sits just above the key bars in such a way that they touch when the key is pressed.</p>
+
+<h3>Trialing Pins</h3>
+
+<p><img class="left"
+src="http://i1338.photobucket.com/albums/o700/ped4416/pinTrial_zps48a9dc70.jpg"
+style="width: auto; height: 420px;"></p>
+
+<p>The ground connection seems to be a little sporadic. Most of the time
+we can trigger the circuit but occasionally a connection is not
+made. We have decided to take the typewriter apart and look for some
+other potential common ground connections. If we have to each key may
+need to be grounded individually but this would create a lot more work
+and many more wires which is something we want to avid if possible.</p>
+
+<p>After taking off the various casing screws we managed to remove most
+of the cover and could then look in and see the mechanisms more
+easily. Each key has a hook eye connector near the back of the
+typewriter attached to a large curved hunk of metal. This seems to
+create a good ground but is still not reading reliably enough.</p>
+
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/MetalFile_zps277079e0.jpg" style="width: 420px; height: auto;"></p>
+
+<p>The issue after testing the individual bars we found was a lacquer or some
+covering on the bars. With a large file we have managed to rub away
+this layer and now we have a really strong connection which is great!
+We are all set to solder in the wires and map they keys through to the
+<a href="https://www.pjrc.com/teensy/">Teensy</a> board.</p>
+
+<h3>Teesny Library For Port Expanders</h3>
+
+<p>We have hit a big snag. With an Ardunio Uno the Port Expanders are working perfectly but we need to use the <a href="https://www.pjrc.com/teensy/" title="Have a look">Teensy</a> to fit within the constraints of our housing, being the underside of the typewriter. The Teensy board is not recognising the port expansion library at the moment. There may be a problem with the <a href="http://playground.arduino.cc/Main/WireLibraryDetailedReference#.Uy9SRq25Oy8">wire.h</a> header file that forms the basis for all communication with the chip or it could be a hardware issue. Debugging software and hardware here we go!</p>
 </div>
 
 
@@ -124,7 +150,7 @@ and LEDs too.</p>
 	
   
 
-<span class="byline author vcard">Posted by <span class="fn">Pedro</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Anton && Pedro</span></span>
 
 	
 
@@ -138,12 +164,12 @@ and LEDs too.</p>
   
 
 
-<time datetime="2014-02-18T10:43:20+00:00" pubdate data-updated="true">Feb 18<span>th</span>, 2014</time>
+<time datetime="2014-03-20T10:43:37+00:00" pubdate data-updated="true">Mar 20<span>th</span>, 2014</time>
       </p>
       
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/" data-via="" data-counturl="http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/" data-via="" data-counturl="http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/" >Tweet</a>
   
   
   
@@ -154,10 +180,8 @@ and LEDs too.</p>
       
       <p class="meta">
 	
-        <a class="basic-alignment left" href="/blog/2014/02/16/typewriter-found/" title="Previous Post: Typewriter found">&laquo; Typewriter found</a>
+        <a class="basic-alignment left" href="/blog/2014/03/19/Mapping-The-Keys/" title="Previous Post: Mapping the Keys">&laquo; Mapping the Keys</a>
 	
-	
-        <a class="basic-alignment right" href="/blog/2014/02/18/Farnell-Order/" title="Next Post: Farnell Order">Farnell Order &raquo;</a>
 	
       </p>
     </footer>
@@ -173,7 +197,7 @@ and LEDs too.</p>
 
 <aside class="sidebar">
   <p style="border: thick inset; padding: 0.25em 0.5em; line-height: 1.25em;"><font style="font-size: 16px; font-weight: 700;">Reading time:</font><br />
-  less than 1 minute</p>
+  about 3  minutes</p>
   
   <section>
   <h1>Recent Posts</h1>
@@ -225,8 +249,8 @@ and LEDs too.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/';
-        var disqus_url = 'http://typebar.github.io/blog/2014/02/18/maze-of-a-thousand-parts/';
+        var disqus_identifier = 'http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/';
+        var disqus_url = 'http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/';
         var disqus_script = 'embed.js';
       
     (function () {

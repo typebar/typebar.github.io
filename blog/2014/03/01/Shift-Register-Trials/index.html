@@ -5,20 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Get Started with Typebar - Typebar</title>
+  <title>Shift Register Trials - Typebar</title>
   <meta name="author" content="Pedro && Anton">
 
   
-  <meta name="description" content="Hardware Parts List Finding a typewriter Finding other components Circuit Debugging Possible Extensions Code Installation Testing Debugging Mapping &hellip;">
-  <meta name="keywords" content="typewriter qwerty typebar keyboard layout shopping smith corona hardware ibm">
-  <meta property="article:tag" content="typewriter">
-<meta property="article:tag" content="qwerty">
-<meta property="article:tag" content="typebar">
-<meta property="article:tag" content="keyboard layout">
-<meta property="article:tag" content="shopping">
-<meta property="article:tag" content="smith corona">
-<meta property="article:tag" content="hardware">
-<meta property="article:tag" content="ibm">
+  <meta name="description" content="Shift Register Trials Shift registers are looking set to be an essential part of the project. We need them to help create mulitple inputs for all the &hellip;">
+  <meta name="keywords" content="shift register light-emitting diode texas instruments truckee tahoe airport business orange county register rodney alcala">
+  <meta property="article:tag" content="shift register">
+<meta property="article:tag" content="light-emitting diode">
+<meta property="article:tag" content="texas instruments">
+<meta property="article:tag" content="truckee tahoe airport">
+<meta property="article:tag" content="business">
+<meta property="article:tag" content="orange county register">
+<meta property="article:tag" content="rodney alcala">
   
   
   <!-- http://t.co/dKP3o1e -->
@@ -27,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://typebar.github.io/examples/">
+  <link rel="canonical" href="http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,39 +80,33 @@
     
   <header>
     
-      <h1 class="entry-title">Get Started With Typebar</h1>
+      <h1 class="entry-title">Shift Register Trials</h1>
     
   </header>
 
 
 
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/general/'>general,</a>, <a class='category' href='/blog/categories/post/'>post</a>
+  
+</span>
 
-<div class="entry-content"><h1>Hardware</h1>
 
-<h2>Parts List</h2>
+<div class="entry-content"><h1>Shift Register Trials</h1>
 
-<h3>Finding a typewriter</h3>
+<p>Shift registers are looking set to be an essential part of the project. We need them to help create mulitple inputs for all the typwriter keys and also an array of LED bulbs. There are some videos online that have helped to illustrate how shift registers work in a practicle way. Kevin Darrah gives a really nice example <a href="https://www.youtube.com/watch?v=6fVbJbNPrEU">here</a> showing multiple registers daisychained. I find looking at the flow of data between the registers easier to follow away from the computer screen. Coding up the apprpriate shifts in bits is going to take some time and we plan to create our own library to have full functionality to allow for all the necessary communication. So far I have created a .h file in C++ with some help from a few github accounts along the way.</p>
 
-<h3>Finding other components</h3>
+<p>The shift registers are Logic 8bit Texas Instruments CD74HC595E from Farnell UK. See <a href="http://www.farnell.com/datasheets/1777736.pdf">data sheet</a> for more details.<br/>
+This shift register consists of 8 output pins, which are either high (1) or low (0). When you pull the SRCLK (Serial Clock) pin high (analogy to ringing the bell), every pin moves one to the right. The Last pin drops out, and the new pin’s state is defined by the SER (Serial) pin, and you can set that to either 1 (HIGH) or 0 (LOW). Lets get coding!</p>
 
-<h2>Circuit</h2>
+<h3>Shift Register Trials Video</h3>
 
-<h2>Debugging</h2>
+<iframe src="//player.vimeo.com/video/89762743" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
 
-<h2>Possible Extensions</h2>
-
-<h1>Code</h1>
-
-<h2>Installation</h2>
-
-<h2>Testing</h2>
-
-<h2>Debugging</h2>
-
-<h2>Mapping</h2>
-
-<h2>Extend</h2>
 </div>
 
 
@@ -122,7 +115,7 @@
 	
   
 
-<span class="byline author vcard">Posted by <span class="fn">anton</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Anton && Pedro</span></span>
 
 	
 
@@ -136,12 +129,12 @@
   
 
 
-<time datetime="2014-02-07T13:11:49+00:00" pubdate data-updated="true">Feb 7<span>th</span>, 2014</time>
+<time datetime="2014-03-01T10:43:37+00:00" pubdate data-updated="true">Mar 1<span>st</span>, 2014</time>
       </p>
       
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/examples/index.html" data-via="" data-counturl="http://typebar.github.io/examples/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/" data-via="" data-counturl="http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/" >Tweet</a>
   
   
   
@@ -152,6 +145,10 @@
       
       <p class="meta">
 	
+        <a class="basic-alignment left" href="/blog/2014/02/18/Farnell-Order/" title="Previous Post: Farnell Order">&laquo; Farnell Order</a>
+	
+	
+        <a class="basic-alignment right" href="/blog/2014/03/16/Port-Expander-Trials/" title="Next Post: Port Expander Trials">Port Expander Trials &raquo;</a>
 	
       </p>
     </footer>
@@ -167,7 +164,7 @@
 
 <aside class="sidebar">
   <p style="border: thick inset; padding: 0.25em 0.5em; line-height: 1.25em;"><font style="font-size: 16px; font-weight: 700;">Reading time:</font><br />
-  less than 1 minute</p>
+  about 1  minute</p>
   
   <section>
   <h1>Recent Posts</h1>
@@ -219,8 +216,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://typebar.github.io/examples/index.html';
-        var disqus_url = 'http://typebar.github.io/examples/index.html';
+        var disqus_identifier = 'http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/';
+        var disqus_url = 'http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/';
         var disqus_script = 'embed.js';
       
     (function () {

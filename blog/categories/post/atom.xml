@@ -4,7 +4,7 @@
   <title><![CDATA[Category: post | Typebar]]></title>
   <link href="http://typebar.github.io/blog/categories/post/atom.xml" rel="self"/>
   <link href="http://typebar.github.io/"/>
-  <updated>2014-02-19T12:00:53+00:00</updated>
+  <updated>2014-03-26T17:43:44+00:00</updated>
   <id>http://typebar.github.io/</id>
   <author>
     <name><![CDATA[Pedro && Anton]]></name>
@@ -14,86 +14,152 @@
 
   
   <entry>
-    <title type="html"><![CDATA[The Hunt]]></title>
-    <link href="http://typebar.github.io/blog/2014/02/10/the-hunt/"/>
-    <updated>2014-02-10T10:43:37+00:00</updated>
-    <id>http://typebar.github.io/blog/2014/02/10/the-hunt</id>
-    <content type="html"><![CDATA[<p>Rain trickled off the tent roofs of cramped rows stalls and miniature
-shops as we walked through Camden Lock Market. A sprawling market in
-East London, Camden Lock Market is home to the eclectic and oddity
-filled world of second-hand goods, and for that reason, we found
-ourselves wading into a labyrinth of tight corridors and make-shift
-alleyways on a hunt.</p>
+    <title type="html"><![CDATA[Building in Earnest]]></title>
+    <link href="http://typebar.github.io/blog/2014/03/20/Building-In-Earnest/"/>
+    <updated>2014-03-20T10:43:37+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/03/20/Building-In-Earnest</id>
+    <content type="html"><![CDATA[<h2>Placing The Solder Board</h2>
 
-<p><img class="right" src="/images/IMG_0997.JPG" style="width: auto;
-height: 420px;" alt="Lock Market"></p>
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/TheBelly_zps08c9ef02.jpg" style="width: 420px; height: auto;"></p>
 
-<p>Our hunt began with the decision to try, on what one may consider the
-most miserable of rainy days, to find an old typewriter to tear apart
-and rebuild with a new circulatory system of wires and electrical
-confabulations. Much like the typewriters we where in search of, the
-market had traded in its golden buttons and knobs for an infinite
-amount of character from years of constant use.</p>
+<p>We have cut out an appropriate length of solder board and had to carefully trim away a small part of it to sit against the metal chassis. The chassis is situated centrally with a good solid base to fix the solder board to. The board needs to sit overlapping the keys but not touching them.</p>
 
-<p>Search through the rows of stalls we happened upon a small shop, if
-you could call it a shop as it was more of a cutout corner of a
-warehouse, which was divided up into small shops with borders created
-from the mass of nick-knacks the shopkeepers had accumulated.</p>
+<h3>The Belly Of The Beast</h3>
 
-<p>An average sized, circularly bespectacled man, who lack follicular
-fortitude approached us as we lazily strolled past his shop. &ldquo;Can I
-help,&rdquo; he inquired. We regained him with the details of our
-typewritered quest, and to our great remiss he informed us that not
-only the item we searched for was rare but that the one stall he could
-think of that might sell such an item was closed on this unfortunately
-dreary Monday.</p>
+<p><img class="left" src="http://i1338.photobucket.com/albums/o700/ped4416/IMG_1058_zps108da53a.jpg" style="width: 220px; height: auto;"></p>
 
-<p>Sighing in frustration we concede to not be beaten by lock market so
-easily and to press on in our search of the item we most desired in
-the world &ndash; a tiny, but tasteful typewriter, or two.</p>
+<p>Using a small metal ruler and Stanley Blade and making sure to cut across the holes has worked out well for trimming the solder board to size. The images below illustrate the process and show how the central screw on the chassis has been a problem. We had to make sure the common ground did not interfere with the solder board circuit lines creating continuous connections. A simple way to stop this we think is to use some electrical tape wedged in between the metal screw housing and the solder board.</p>
 
-<p><img class="left" src="/images/IMG_0998.JPG" style="width: 420px;
-height: auto;" alt="Photo Typewriter"></p>
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/trimSolderBoard_zpsceb335ad.jpg" style="width: auto; height: 420px;"></p>
 
-<p>We came upon an uber trendy photography shop with a beautiful old
-typewriter on display though not for sale. The sales guy kindly let us
-have a play with the mechanisms and we quickly saw many potential
-parts to attach various sensors too. Another half hour or so of
-wandering brought us back to a small shop we had not noticed on our
-first circuit.</p>
+<h2>Creating The Circuit</h2>
 
-<p>Near the main entrance of the market, a small shop selling notebooks,
-and random cards with inspirational sayings on them, had two little
-typewriters for sale.</p>
+<p>With all the keys synced to common ground we need 5v to connect the circuit when pressed down. We have trialled hard metal pins as seen in the image below but they may not be suitable as the spacing would have to be very precise. Better options may be splayed ribbon cable or a standard gage wire that pokes through the solder board and sits just above the key bars in such a way that they touch when the key is pressed.</p>
 
-<p>Typewriter one, for £70, was beaten-up and had quite a few sticky
-keys, which was most likely due to the fact that as the shop keeper
-told us, &ldquo;WD40 works to unstick the keys&rdquo; (Note: WD40 is great for
-removing dirt and residue, but something like Hoppe&rsquo;s Gun Oil is
-needed to lubricate a typewriter).</p>
+<h3>Trialing Pins</h3>
 
-<p><img class="right" src="/images/IMG_0999.JPG" style="width: 420px;
-height: auto;" alt="Typewriter"></p>
+<p><img class="left"
+src="http://i1338.photobucket.com/albums/o700/ped4416/pinTrial_zps48a9dc70.jpg"
+style="width: auto; height: 420px;"></p>
 
-<p>Tucked away behind a few boxes, the shop keeper had another more
-modern, Olympic brand typewriter. This low profile, sleek white
-machine, although in better condition then the first typewriter, still
-needed a lot of TLC.</p>
+<p>The ground connection seems to be a little sporadic. Most of the time
+we can trigger the circuit but occasionally a connection is not
+made. We have decided to take the typewriter apart and look for some
+other potential common ground connections. If we have to each key may
+need to be grounded individually but this would create a lot more work
+and many more wires which is something we want to avid if possible.</p>
 
-<p>We decided to leave these two typing companions in need of a better
-home, and continue our search elsewhere (eBay and gumtree being our
-most hopeful candidates).</p>
+<p>After taking off the various casing screws we managed to remove most
+of the cover and could then look in and see the mechanisms more
+easily. Each key has a hook eye connector near the back of the
+typewriter attached to a large curved hunk of metal. This seems to
+create a good ground but is still not reading reliably enough.</p>
 
-<p>On our travels back, I (Pedro) decided to ring a friend. Rob Parrett,
-a music producer and collector extraordinaire, had a lovely little
-machine in full working order, that he said we could take off his
-hands for the reasonable price of £15.</p>
+<p><img class="right" src="http://i1338.photobucket.com/albums/o700/ped4416/MetalFile_zps277079e0.jpg" style="width: 420px; height: auto;"></p>
 
-<p>Although the moth-balled rows of Camden Lock Market didn&rsquo;t present us
-with a beautiful blue Smith Corona, we feel as though we have come out
-ahead having seen three different types of typewriters, and found out
-that sometimes calling your friends before you go trudge through a
-clutter market might just be your very best option.</p>
+<p>The issue after testing the individual bars we found was a lacquer or some
+covering on the bars. With a large file we have managed to rub away
+this layer and now we have a really strong connection which is great!
+We are all set to solder in the wires and map they keys through to the
+<a href="https://www.pjrc.com/teensy/">Teensy</a> board.</p>
+
+<h3>Teesny Library For Port Expanders</h3>
+
+<p>We have hit a big snag. With an Ardunio Uno the Port Expanders are working perfectly but we need to use the <a href="https://www.pjrc.com/teensy/" title="Have a look">Teensy</a> to fit within the constraints of our housing, being the underside of the typewriter. The Teensy board is not recognising the port expansion library at the moment. There may be a problem with the <a href="http://playground.arduino.cc/Main/WireLibraryDetailedReference#.Uy9SRq25Oy8">wire.h</a> header file that forms the basis for all communication with the chip or it could be a hardware issue. Debugging software and hardware here we go!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mapping the Keys]]></title>
+    <link href="http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys/"/>
+    <updated>2014-03-19T10:43:37+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/03/19/Mapping-The-Keys</id>
+    <content type="html"><![CDATA[<h1>Mapping The Keys &amp; Sensor Thoughts</h1>
+
+<p><img class="left" src="http://i1338.photobucket.com/albums/o700/ped4416/MappingTheKeys_zpsdaad141e.jpg" style="width: auto; height: 420px;"></p>
+
+<p>Sometimes there is nothing better than getting a pen and paper out and when it came to mapping out all the keys on the typewriter this was no exception. The keys are mapped in an odd yet consistent order that must be to do with the mechanics of the machine. We will need to program the inputs to call arrays of length 16 to match the port expander chips.</p>
+
+<h3>The Sensor Mountings</h3>
+
+<p>The underside of the typewriter looks like the best place to place our sensors. Each key as seen in the image below has a long bar that lowers when the key is pressed. A metal chassis makes a very secure support for attaching our solder board onto and from this we are planning to attach small metal pins or wires that will create a circuit by supplying 5v to the bars when pressed. The circuit will be created as each key will be grounded via a suitable point on the frame of the typewriter.</p>
+
+<h3>Improving The I2C Library</h3>
+
+<p>We have had all 4 <a href="http://uk.farnell.com/microchip/mcp23017-e-sp/ic-io-expander-16bit-i2c-28dip/dp/1332088">MCP23017</a> chips working using the Arduino but to make the code more efficient we have used bit shifting to iterate through all 4 chips to check which pin out of 64 is active. Before this we had four separate .h files and .cpp files which is not good coding practice as we were duplicating many lines of code. The next step is to try and run this code onto the teensy board.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Port Expander Trials]]></title>
+    <link href="http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/"/>
+    <updated>2014-03-16T10:43:37+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials</id>
+    <content type="html"><![CDATA[<h1>Port Expander Trials</h1>
+
+<p>After realising the shift registers we bought were parallel outputs only and not capable of allowing input we decided to trial the <a href="http://uk.farnell.com/microchip/mcp23017-e-sp/ic-io-expander-16bit-i2c-28dip/dp/1332088">MCP23017</a> port expander, a 16-bit serial expander with I2C serial interface. With 16 inputs or outputs on each microchip we can daisy chain a number together to achieve all necessary inputs from the typewriter and also use one on its own to allow the LED bulbs to light up. The benefit of using the I2C method is that it only requires 2 analog pins to both send and receive signals. Space is of up-most importance so conserving the amount of wires and components is critical to fulfill our design goals.</p>
+
+<p>We have prototyped using a basic Arduino Uno board As seen in the <em>MCP23017 LED Video</em> below getting outputs to 16 LED bulbs worked out pretty well. To test the inputs we used three push buttons and a home made space bar as seen in the <em>MCP23017 Pushbutton Video</em>. Taking note of the need for pull up resisters was critical as not putting a 10k one in for the space bar gave some very inaccurate data readings.</p>
+
+<h4>MCP23017 LED video</h4>
+
+<iframe src="http://typebar.github.io//player.vimeo.com/video/89758910" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
+
+
+<h4>MCP23017 Pushbutton Video</h4>
+
+<iframe src="http://typebar.github.io//player.vimeo.com/video/89762682" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
+
+
+<p>Achieving daisy chaining has proved a little tricky. The data sheet is not very easy to read exactly which pins are required for this and it could well be that this is created within the software by bit shifting the chips using their hex numbers being 0x20, 0x21, 0x23 and 0x24 for the 4 we are using. Each chip has to be wired in an 8 bit pattern. 0x20 needs pin 15,16 and 17 to be wired to ground then other combinations are used for any subsequent chips as seen below. We found it hard to work read the information from the data sheet and so with a little trial an error with the wiring we managed to get them all working.</p>
+
+<h4>MCP20317 Ground/5v Wiring</h4>
+
+<p><img src="http://i1338.photobucket.com/albums/o700/ped4416/ShiftRegisters_zps9a262b30.jpg" style="width: auto; height: 420px;"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shift Register Trials]]></title>
+    <link href="http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials/"/>
+    <updated>2014-03-01T10:43:37+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/03/01/Shift-Register-Trials</id>
+    <content type="html"><![CDATA[<h1>Shift Register Trials</h1>
+
+<p>Shift registers are looking set to be an essential part of the project. We need them to help create mulitple inputs for all the typwriter keys and also an array of LED bulbs. There are some videos online that have helped to illustrate how shift registers work in a practicle way. Kevin Darrah gives a really nice example <a href="https://www.youtube.com/watch?v=6fVbJbNPrEU">here</a> showing multiple registers daisychained. I find looking at the flow of data between the registers easier to follow away from the computer screen. Coding up the apprpriate shifts in bits is going to take some time and we plan to create our own library to have full functionality to allow for all the necessary communication. So far I have created a .h file in C++ with some help from a few github accounts along the way.</p>
+
+<p>The shift registers are Logic 8bit Texas Instruments CD74HC595E from Farnell UK. See <a href="http://www.farnell.com/datasheets/1777736.pdf">data sheet</a> for more details.<br/>
+This shift register consists of 8 output pins, which are either high (1) or low (0). When you pull the SRCLK (Serial Clock) pin high (analogy to ringing the bell), every pin moves one to the right. The Last pin drops out, and the new pin’s state is defined by the SER (Serial) pin, and you can set that to either 1 (HIGH) or 0 (LOW). Lets get coding!</p>
+
+<h3>Shift Register Trials Video</h3>
+
+<iframe src="http://typebar.github.io//player.vimeo.com/video/89762743" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Farnell Order]]></title>
+    <link href="http://typebar.github.io/blog/2014/02/18/Farnell-Order/"/>
+    <updated>2014-02-18T10:43:37+00:00</updated>
+    <id>http://typebar.github.io/blog/2014/02/18/Farnell-Order</id>
+    <content type="html"><![CDATA[<h1>Farnell Parts Order</h1>
+
+<p>After some thought and looking through some options we have placed an
+order with <a href="http://uk.farnell.com/" title="Have a look">Farnell</a> to get our
+components to get Typebar properly started. Multiplexers, shift
+registers, rotary encoders, LEDs, Reed Switches, PCB prototyping board
+and copper tape will cover most of the requirements. While we wait on
+the order which will be here within 24 hours we can start looking at
+all that code. It&rsquo;s time to build a few libraries to help navigate the
+mappings required for all 47 keys as well as other switches and LEDs
+too.</p>
 ]]></content>
   </entry>
   

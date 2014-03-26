@@ -5,20 +5,19 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Get Started with Typebar - Typebar</title>
+  <title>Port Expander Trials - Typebar</title>
   <meta name="author" content="Pedro && Anton">
 
   
-  <meta name="description" content="Hardware Parts List Finding a typewriter Finding other components Circuit Debugging Possible Extensions Code Installation Testing Debugging Mapping &hellip;">
-  <meta name="keywords" content="typewriter qwerty typebar keyboard layout shopping smith corona hardware ibm">
-  <meta property="article:tag" content="typewriter">
-<meta property="article:tag" content="qwerty">
-<meta property="article:tag" content="typebar">
-<meta property="article:tag" content="keyboard layout">
-<meta property="article:tag" content="shopping">
-<meta property="article:tag" content="smith corona">
-<meta property="article:tag" content="hardware">
-<meta property="article:tag" content="ibm">
+  <meta name="description" content="Port Expander Trials After realising the shift registers we bought were parallel outputs only and not capable of allowing input we decided to trial &hellip;">
+  <meta name="keywords" content="light-emitting diode arduino i²c bit arduino uno raspberry pi general purpose input\/output">
+  <meta property="article:tag" content="light-emitting diode">
+<meta property="article:tag" content="arduino">
+<meta property="article:tag" content="i²c">
+<meta property="article:tag" content="bit">
+<meta property="article:tag" content="arduino uno">
+<meta property="article:tag" content="raspberry pi">
+<meta property="article:tag" content="general purpose input\/output">
   
   
   <!-- http://t.co/dKP3o1e -->
@@ -27,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://typebar.github.io/examples/">
+  <link rel="canonical" href="http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -81,39 +80,45 @@
     
   <header>
     
-      <h1 class="entry-title">Get Started With Typebar</h1>
+      <h1 class="entry-title">Port Expander Trials</h1>
     
   </header>
 
 
 
 
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/general/'>general,</a>, <a class='category' href='/blog/categories/post/'>post</a>
+  
+</span>
 
-<div class="entry-content"><h1>Hardware</h1>
 
-<h2>Parts List</h2>
+<div class="entry-content"><h1>Port Expander Trials</h1>
 
-<h3>Finding a typewriter</h3>
+<p>After realising the shift registers we bought were parallel outputs only and not capable of allowing input we decided to trial the <a href="http://uk.farnell.com/microchip/mcp23017-e-sp/ic-io-expander-16bit-i2c-28dip/dp/1332088">MCP23017</a> port expander, a 16-bit serial expander with I2C serial interface. With 16 inputs or outputs on each microchip we can daisy chain a number together to achieve all necessary inputs from the typewriter and also use one on its own to allow the LED bulbs to light up. The benefit of using the I2C method is that it only requires 2 analog pins to both send and receive signals. Space is of up-most importance so conserving the amount of wires and components is critical to fulfill our design goals.</p>
 
-<h3>Finding other components</h3>
+<p>We have prototyped using a basic Arduino Uno board As seen in the <em>MCP23017 LED Video</em> below getting outputs to 16 LED bulbs worked out pretty well. To test the inputs we used three push buttons and a home made space bar as seen in the <em>MCP23017 Pushbutton Video</em>. Taking note of the need for pull up resisters was critical as not putting a 10k one in for the space bar gave some very inaccurate data readings.</p>
 
-<h2>Circuit</h2>
+<h4>MCP23017 LED video</h4>
 
-<h2>Debugging</h2>
+<iframe src="//player.vimeo.com/video/89758910" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
 
-<h2>Possible Extensions</h2>
 
-<h1>Code</h1>
+<h4>MCP23017 Pushbutton Video</h4>
 
-<h2>Installation</h2>
+<iframe src="//player.vimeo.com/video/89762682" width="500"
+height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen
+allowfullscreen></iframe>
 
-<h2>Testing</h2>
 
-<h2>Debugging</h2>
+<p>Achieving daisy chaining has proved a little tricky. The data sheet is not very easy to read exactly which pins are required for this and it could well be that this is created within the software by bit shifting the chips using their hex numbers being 0x20, 0x21, 0x23 and 0x24 for the 4 we are using. Each chip has to be wired in an 8 bit pattern. 0x20 needs pin 15,16 and 17 to be wired to ground then other combinations are used for any subsequent chips as seen below. We found it hard to work read the information from the data sheet and so with a little trial an error with the wiring we managed to get them all working.</p>
 
-<h2>Mapping</h2>
+<h4>MCP20317 Ground/5v Wiring</h4>
 
-<h2>Extend</h2>
+<p><img src="http://i1338.photobucket.com/albums/o700/ped4416/ShiftRegisters_zps9a262b30.jpg" style="width: auto; height: 420px;"></p>
 </div>
 
 
@@ -122,7 +127,7 @@
 	
   
 
-<span class="byline author vcard">Posted by <span class="fn">anton</span></span>
+<span class="byline author vcard">Posted by <span class="fn">Anton && Pedro</span></span>
 
 	
 
@@ -136,12 +141,12 @@
   
 
 
-<time datetime="2014-02-07T13:11:49+00:00" pubdate data-updated="true">Feb 7<span>th</span>, 2014</time>
+<time datetime="2014-03-16T10:43:37+00:00" pubdate data-updated="true">Mar 16<span>th</span>, 2014</time>
       </p>
       
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/examples/index.html" data-via="" data-counturl="http://typebar.github.io/examples/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/" data-via="" data-counturl="http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/" >Tweet</a>
   
   
   
@@ -152,6 +157,10 @@
       
       <p class="meta">
 	
+        <a class="basic-alignment left" href="/blog/2014/03/01/Shift-Register-Trials/" title="Previous Post: Shift Register Trials">&laquo; Shift Register Trials</a>
+	
+	
+        <a class="basic-alignment right" href="/blog/2014/03/19/Mapping-The-Keys/" title="Next Post: Mapping the Keys">Mapping the Keys &raquo;</a>
 	
       </p>
     </footer>
@@ -167,7 +176,7 @@
 
 <aside class="sidebar">
   <p style="border: thick inset; padding: 0.25em 0.5em; line-height: 1.25em;"><font style="font-size: 16px; font-weight: 700;">Reading time:</font><br />
-  less than 1 minute</p>
+  about 1  minute</p>
   
   <section>
   <h1>Recent Posts</h1>
@@ -219,8 +228,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://typebar.github.io/examples/index.html';
-        var disqus_url = 'http://typebar.github.io/examples/index.html';
+        var disqus_identifier = 'http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/';
+        var disqus_url = 'http://typebar.github.io/blog/2014/03/16/Port-Expander-Trials/';
         var disqus_script = 'embed.js';
       
     (function () {
